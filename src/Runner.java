@@ -1,5 +1,5 @@
 public class Runner {
-    public void main(String[] args)
+    public static void main(String[] args)
     {
         int [] arr={0,1,1,1,1,11,1,1,1,1,1,1,1,1,10,1,1,1,1,11,1,1,1,1,1,1,1,1,1};
 
@@ -18,8 +18,15 @@ public class Runner {
                    arr[i+1]=a;
 
                }
+
+               System.out.println();
            }
         }
     }
+    public static String toString()
+    {
+
+    }
+
 
 }

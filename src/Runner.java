@@ -1,8 +1,8 @@
 public class Runner {
     public static void main(String[] args)
     {
-        int [] arr={0,1,1,1,1,11,1,1,1,1,1,1,1,1,10,1,1,1,1,11,1,1,1,1,1,1,1,1,1};
-
+        int [] arr={0,1,1,1,1,11,1,1,1,1,1,1,1,1,5,10,1,1,1,1,11,1,1,1,1,1,1,1,1,1};
+        long time = System.nanoTime();
         boolean done=false;
         while(!done)
         {
@@ -18,13 +18,15 @@ public class Runner {
                    arr[i+1]=a;
 
                }
-
-               System.out.println();
            }
         }
-    }
-    public static String toString()
-    {
+
+
+        System.out.println((double)(System.nanoTime() - time)/(100000000)+" secs");
+        for(int k=0;k<arr.length;k++)
+        {
+            System.out.print(arr[k]+" ");
+        }
 
     }
 
